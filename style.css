@@ -1,0 +1,325 @@
+.topbar{
+    background-color:#10a6e3;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 15px;
+}
+
+.topbarbrand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.topbarlogo{
+    height:auto;
+    max-width:8%;
+}
+
+.topbarheader{
+    margin-top:0;
+    font-weight:bold;
+}
+
+.topbarpagelinks{
+    display:flex;
+    align-items:center;
+    gap:80px;
+}
+
+.topbar a{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.topbar a:hover{
+    text-decoration:underline;
+}
+
+.subpagebar{
+    background-color:#0c4366;
+    display:flex;
+    justify-content:center;
+    padding:7px 10px;
+}
+
+.subpagelinks{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.subpagebar a{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.subpagebar a:hover{
+    text-decoration:underline;
+}
+
+.homeimage{
+    text-align:center;
+    width:100%;
+}
+
+.homepara{
+    text-align:center;
+}
+
+.imagestyle{
+    border-width:10px;
+    border-style:solid;
+    border-color: #f3f3f3;
+    border-radius:15px;
+}
+
+.sectionimage{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    width:100%;
+    gap:30px;
+}
+
+.sectionimage figure{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0;
+}
+
+.sectionimage figcaption{
+    margin-top:10px;
+    text-align:center;
+}
+
+.sectionheader{
+    text-align:left;
+    text-indent:3%;
+    border-bottom:1px solid #ddd;
+}
+
+.sectiondevlog{
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.sectionpara{
+    text-align:left;
+    text-indent:3%;
+}
+
+.sectiongameeng{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.sectionplatform{
+    align-items:center;;
+}
+
+.sectionlist ul{
+    text-align:center;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+.sectionlist li{
+    margin-bottom:15px;
+}
+
+.articleheader{
+    text-align:left;
+    text-indent:8%;
+}
+
+.articlepara{
+    text-align:left;
+    text-indent:2%;
+    text-justify: auto;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.articleimage{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    width:100%;
+    gap:30px;
+}
+
+.articleimage figure{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0;
+}
+
+.articleimage figcaption{
+    margin-top:10px;
+    text-align:center;
+}
+
+.formtemplate{
+    margin-bottom:20px;
+}
+
+.formbuttons{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.buttonplatform{
+    display:flex;
+    justify-content:center;
+    padding:10px 20px;
+    gap:10px;
+    margin-top:20px;
+}
+
+.footerbar{
+    background-color:#0c4366;
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    padding:15px;
+    color:#fff;
+}
+
+.footerlinks{
+    display:flex;
+    gap:30px;
+}
+
+.footerbar a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.footerbar a:hover{
+    text-decoration:underline;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-color:#031d2e;
+}
+
+main{
+    width:80%;
+    max-width:800px;
+    margin:30px auto;
+    background-color:#e5e5e5;
+    padding:30px;
+    border-radius:8px;
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+h2{
+    color:#10a6e3;
+    border-bottom:1px solid #ddd;
+    padding-bottom:5px;
+}
+
+h3{
+    color:#333;
+    font-size:16px;
+}
+
+div{
+    margin:0;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+th{
+    border-bottom:2px solid #000;
+}
+
+th, td{
+    padding:6px;
+    text-align:left;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+}
+
+figure{
+    margin:0;
+}
+
+figcaption{
+    font-size:10px;
+    margin:0;
+}
+
+section{
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="confirmpassword"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select, textarea{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    border-radius:4px;
+    font-size:15px;
+}
+
+fieldset{
+    border:1px solid #ccc;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+fieldset label{
+    font-weight:normal;
+    margin-bottom:8px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right:8px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:4px;
+    background-color:#10a6e3;
+    color:#fff;
+    font-size:15px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#0c4366;
+}

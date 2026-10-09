@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="topbar">
+        <div class="topbarbrand">
+            <img class="topbarlogo" alt="brand logo image" src="img/carpecraslogo.png" usemap="#logomap">
+            <map name="logomap">
+                <area alt="logo shape" shape="rect" coords="0, 0, 30, 30" href="index.html">
+            </map>
+            <header class="topbarheader">CarpeCras</header>                    
+        </div>
+
+        <div class="topbarpagelinks">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="bugreport.html">Bug Report</a>
+            <a href="feedback.html">Feedback</a>      
+        </div>
+    </nav>
+
+    <main>
+        <h1>Bug Report</h1>
+
+        <form method="POST">
+            <section>
+                <h2>Personal Identification</h2>
+
+                <div class="formtemplate">
+                    <label for="fullname">Name: </label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Username or Name" required>
+                </div>
+
+                <div class="formtemplate">
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="formtemplate">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone" name="phone" placeholder="+01 1111111111 (Optional)">
+                </div>
+            </section>
+
+            <section>
+                <h2>Platform</h2>
+
+                <fieldset>
+                    <legend>Which platform are you having issues with?</legend>
+
+                <label>
+                    <input type="radio" name="satisfaction" value="satisfied">Website
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="neutral">Game Projects
+                </label>                  
+                </fieldset>
+
+            </section>
+
+            <section>
+                <h2>Detailed Report</h2>
+
+                <div class="formtemplate">
+                    <label for="date">When did the bug happen?</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="formtemplate">
+                    <label for="suggestions">Bug description:</label>
+                    <textarea id="suggestions" name="suggestions" rows="6" placeholder="If possible, describe what occured before, during, and after the error happened."></textarea>
+                </div>
+            </section>
+
+            <section>
+                <div class="formbuttons">
+                    <button type="submit">Send Feedback</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </section>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="footerbar">
+            <small>&copy 2026 CarpeCras. TM GenC Corporation.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

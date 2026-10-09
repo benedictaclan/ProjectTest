@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="topbar">
+        <div class="topbarbrand">
+            <img class="topbarlogo" alt="brand logo image" src="img/carpecraslogo.png" usemap="#logomap">
+            <map name="logomap">
+                <area alt="logo shape" shape="rect" coords="0, 0, 30, 30" href="index.html">
+            </map>
+            <header class="topbarheader">CarpeCras</header>                    
+        </div>
+
+        <div class="topbarpagelinks">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="bugreport.html">Bug Report</a>
+            <a href="feedback.html">Feedback</a>      
+        </div>
+    </nav>
+
+    <main>
+        <h1>Feedback</h1>
+
+        <form method="POST">
+            <section>
+                <h2>Personal Identification</h2>
+
+                <div class="formtemplate">
+                    <label for="fullname">Name: </label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Username or Name" required>
+                </div>
+
+                <div class="formtemplate">
+                    <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="formtemplate">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" id="phone" name="phone" placeholder="+01 1111111111 (Optional)">
+                </div>
+            </section>
+
+            <section>
+                <h2>Website Experience Rating</h2>
+
+                <fieldset>
+                    <legend>Overall Satisfaction</legend>
+
+                <label>
+                    <input type="radio" name="satisfaction" value="dissatisfied">Very Satisfied
+                </label>   
+                <label>
+                    <input type="radio" name="satisfaction" value="satisfied">Satisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="neutral">Neutral
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="dissatisfied">Dissatisfied
+                </label>
+                <label>
+                    <input type="radio" name="satisfaction" value="dissatisfied">Very dissatisfied
+                </label>                 
+                </fieldset>
+
+                <fieldset>
+                    <legend>What do you commonly use the website for?</legend>
+
+                    <label>
+                        <input type="checkbox" name="features" value="projectannouncements">Project Announcements
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="gamedevnews">Game Development News
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="platformfinding">Finding Official CarpeCras Platforms
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features" value="bugreport">Bug Reporting
+                    </label>
+                </fieldset>
+
+            </section>
+
+            <section>
+                <h2>Detailed Feedback</h2>
+
+                <div class="formtemplate">
+                    <label for="source">Where did you hear about us?</label>
+
+                    <select id="source" name="source">
+                        <option value="">Select an Option</option>
+                        <option value="socialmedia">Social Media</option>
+                        <option value="friend">Friend</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="formtemplate">
+                    <label for="frequency">Frequency of Use: </label>
+                    <input type="number" id="frequency" name="frequency" placeholder="How many days in a month do you use the website?" min="1" max="31">
+                </div>
+
+                <div class="formtemplate">
+                    <label for="suggestions">Suggestions: </label>
+                    <textarea id="suggestions" name="suggestions" rows="6" placeholder="Enter suggestions for improvement here..."></textarea>
+                </div>
+            </section>
+
+            <section>
+                <div class="formbuttons">
+                    <button type="submit">Send Feedback</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </section>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="footerbar">
+            <small>&copy 2026 CarpeCras. TM GenC Corporation.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
